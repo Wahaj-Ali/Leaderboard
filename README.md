@@ -104,8 +104,6 @@ npm start
 
 ## 🔭 Future Features <a name="future-features"></a>
 
-> Describe 1 - 3 features you will add to the project.
-
 - [ ] **send and receive data from API**
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
