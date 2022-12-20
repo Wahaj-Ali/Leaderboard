@@ -1,0 +1,79 @@
+body {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: rgb(9 4 22 / 83%);
+  color: rgb(255 149 82);
+  padding: 10px;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+button {
+  border: none;
+  background: rgb(255 149 82);
+  color: rgb(9 4 22 / 83%);
+  padding: 5px;
+  border-radius: 5px;
+  box-shadow: 5px 5px 5px;
+  font-weight: 600;
+}
+
+.headline {
+  display: flex;
+  gap: 50px;
+  margin: 10px;
+  padding: 10px;
+}
+
+.recent-scores {
+  display: flex;
+  flex-direction: column;
+  width: 300px;
+}
+
+.scores-headings {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.scores {
+  list-style: none;
+  border: 1px solid rgb(255 149 82);
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  padding: 5px;
+  box-shadow: 3px 3px 5px;
+  border-radius: 5px;
+  margin-top: 0;
+}
+
+.add-score {
+  display: flex;
+  flex-direction: column;
+}
+
+#form {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  gap: 10px;
+}
+
+input::placeholder {
+  color: rgb(9 4 22 / 83%);
+  font-weight: bold;
+}
+
+.add-score input {
+  border: 3px solid black;
+  background: rgb(255 149 82);
+  box-shadow: 5px 5px 5px;
+  border-radius: 5px;
+}
+
+#submit {
+  margin-top: 5px;
+  width: 60px;
+}
