@@ -7,7 +7,6 @@ const displayScores = () => {
     <li class="individual-score">Name: 58</li>
     <li class="individual-score">Name: 89</li>`;
   scoresTable.innerHTML += inddividualScore;
-  scoresTable.appendChild(inddividualScore);
 };
 
 export default displayScores;

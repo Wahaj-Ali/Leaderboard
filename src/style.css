@@ -67,7 +67,6 @@ input::placeholder {
 }
 
 .add-score input {
-  width: -webkit-fill-available;
   border: 3px solid black;
   background: rgb(255 149 82);
   box-shadow: 5px 5px 5px;
