@@ -77,3 +77,8 @@ input::placeholder {
   margin-top: 5px;
   width: 60px;
 }
+
+.individual-score:nth-child(even) {
+  background-color: rgb(255 149 82);
+  color: rgb(9 4 22 / 83%);
+}
