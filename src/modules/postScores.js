@@ -17,4 +17,4 @@ const postScores = async (url) => {
   return result.json();
 };
 
-export { postScores }
+export default postScores;

@@ -8,7 +8,7 @@ const displayScores = (scores) => {
   //   <li class="individual-score">Name: 89</li>`;
   // scoresTable.innerHTML += inddividualScore;
   scores.forEach((score) => {
-    const inddividualScore = `<li class="individual-score">${score.user}: ${score.score}</li>`
+    const inddividualScore = `<li class="individual-score">${score.user}: ${score.score}</li>`;
     scoresTable.innerHTML += inddividualScore;
   });
 };
