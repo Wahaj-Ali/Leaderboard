@@ -56,6 +56,8 @@
 
 - **Uses Webpack**
 - **Based on latest ES6 syntax**
+- **Used async and await JavaScript features to consume the API**
+- **Used Leaderboard API**
 
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
