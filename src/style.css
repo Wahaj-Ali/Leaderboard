@@ -5,7 +5,6 @@ body {
   background-color: rgb(9 4 22 / 83%);
   color: rgb(255 149 82);
   padding: 10px;
-  /* font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif; */
   font-family: 'Open Sans', sans-serif;
 }
 
@@ -24,7 +23,6 @@ h1 {
 }
 
 h2 {
-  /* text-shadow: 1px 1px 2px black, 1px 1px 5px rgb(39 129 193), 2px 0 14px #00a795; */
   text-shadow: 1px 1px 2px black, 1px 1px 5px red, 2px 0 14px #ff0606;
 }
 
@@ -69,6 +67,13 @@ button:hover {
   flex-direction: column;
 }
 
+.add-score input {
+  border: 3px solid black;
+  background: rgb(255 149 82);
+  box-shadow: 5px 5px 5px;
+  border-radius: 5px;
+}
+
 #form {
   display: flex;
   flex-direction: column;
@@ -83,13 +88,6 @@ button:hover {
 input::placeholder {
   color: rgb(9 4 22 / 83%);
   font-weight: bold;
-}
-
-.add-score input {
-  border: 3px solid black;
-  background: rgb(255 149 82);
-  box-shadow: 5px 5px 5px;
-  border-radius: 5px;
 }
 
 #submit {
