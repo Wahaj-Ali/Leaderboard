@@ -5,7 +5,7 @@ body {
   background-color: rgb(9 4 22 / 83%);
   color: rgb(255 149 82);
   padding: 10px;
-  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  font-family: 'Open Sans', sans-serif;
 }
 
 button {
@@ -16,6 +16,19 @@ button {
   border-radius: 5px;
   box-shadow: 5px 5px 5px;
   font-weight: 600;
+}
+
+h1 {
+  text-shadow: 2px 2px 5px red;
+}
+
+h2 {
+  text-shadow: 1px 1px 2px black, 1px 1px 5px red, 2px 0 14px #ff0606;
+}
+
+button:hover {
+  color: rgb(255 149 82);
+  background: rgb(9 4 22 / 83%);
 }
 
 .headline {
@@ -54,18 +67,6 @@ button {
   flex-direction: column;
 }
 
-#form {
-  display: flex;
-  flex-direction: column;
-  align-items: flex-end;
-  gap: 10px;
-}
-
-input::placeholder {
-  color: rgb(9 4 22 / 83%);
-  font-weight: bold;
-}
-
 .add-score input {
   border: 3px solid black;
   background: rgb(255 149 82);
@@ -73,12 +74,38 @@ input::placeholder {
   border-radius: 5px;
 }
 
+#form {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  gap: 10px;
+}
+
+#form input {
+  font-weight: 700;
+}
+
+input::placeholder {
+  color: rgb(9 4 22 / 83%);
+  font-weight: bold;
+}
+
 #submit {
   margin-top: 5px;
   width: 60px;
 }
 
+.individual-score {
+  font-size: larger;
+  font-weight: 700;
+}
+
 .individual-score:nth-child(even) {
   background-color: rgb(255 149 82);
   color: rgb(9 4 22 / 83%);
+  text-shadow: 0 0 2px black;
+}
+
+.individual-score:nth-child(odd) {
+  text-shadow: 1px 1px 3px #ff000091;
 }
