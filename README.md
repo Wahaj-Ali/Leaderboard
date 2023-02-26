@@ -66,7 +66,7 @@
 
 ## 🚀 Live Demo <a name="live-demo"></a>
 
-- [Live Demo Link](https://wahaj-ali.github.io/Leaderboard/dist/)
+- [Live Demo Link](https://wahaj-leaderboard.netlify.app/)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
