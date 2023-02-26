@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
+
 body {
   display: flex;
   flex-direction: column;
@@ -5,7 +7,11 @@ body {
   background-color: rgb(9 4 22 / 83%);
   color: rgb(255 149 82);
   padding: 10px;
-  font-family: 'Open Sans', sans-serif;
+  font-family: 'Press Start 2P', cursive;
+  background-image: url(assets/game2.jpg);
+  background-size: cover;
+  background-position: center;
+  backdrop-filter: blur(4px);
 }
 
 button {
@@ -20,10 +26,12 @@ button {
 
 h1 {
   text-shadow: 2px 2px 5px red;
+  font-size: 25px;
 }
 
 h2 {
   text-shadow: 1px 1px 2px black, 1px 1px 5px red, 2px 0 14px #ff0606;
+  font-size: 18px;
 }
 
 button:hover {
@@ -48,23 +56,28 @@ button:hover {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  margin: 2rem 0;
+  padding: 2px;
+  width: 400px;
 }
 
 .scores {
   list-style: none;
   border: 1px solid rgb(255 149 82);
-  display: flex;
-  flex-direction: column;
-  justify-content: flex-start;
   padding: 5px;
   box-shadow: 3px 3px 5px;
   border-radius: 5px;
   margin-top: 0;
+  background: #9f1919;
+  width: 400px;
 }
 
 .add-score {
   display: flex;
   flex-direction: column;
+  position: relative;
+  top: 40px;
+  left: 100px;
 }
 
 .add-score input {
@@ -72,6 +85,8 @@ button:hover {
   background: rgb(255 149 82);
   box-shadow: 5px 5px 5px;
   border-radius: 5px;
+  font-family: 'Press Start 2P', cursive;
+  font-size: 12px;
 }
 
 #form {
@@ -96,8 +111,9 @@ input::placeholder {
 }
 
 .individual-score {
-  font-size: larger;
   font-weight: 700;
+  display: flex;
+  justify-content: space-between;
 }
 
 .individual-score:nth-child(even) {
@@ -108,4 +124,36 @@ input::placeholder {
 
 .individual-score:nth-child(odd) {
   text-shadow: 1px 1px 3px #ff000091;
+}
+
+.h {
+  color: yellow;
+}
+
+@media all and (max-width: 768px) {
+  body {
+    margin: 0;
+    padding: 0;
+    /* width: fit-content; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .headline {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .add-score {
+    position: inherit;
+  }
+
+  .scores {
+    width: 300px;
+  }
+
+  .scores-headings {
+    width: min-content;
+    gap: 130px;
+  }
 }
