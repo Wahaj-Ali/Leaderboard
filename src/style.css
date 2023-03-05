@@ -12,6 +12,7 @@ body {
   background-size: cover;
   background-position: center;
   backdrop-filter: blur(4px);
+  margin: 0;
 }
 
 button {
@@ -70,6 +71,12 @@ button:hover {
   margin-top: 0;
   background: #9f1919;
   width: 400px;
+  height: 350px;
+  overflow-y: scroll;
+}
+
+.scores::-webkit-scrollbar {
+  display: none;
 }
 
 .add-score {
@@ -132,18 +139,15 @@ input::placeholder {
 
 @media all and (max-width: 768px) {
   body {
-    margin: 0;
     padding: 0;
-
-    /* width: fit-content; */
     display: flex;
     justify-content: center;
     align-items: center;
   }
 
   .headline {
-    display: flex;
     flex-direction: column;
+    height: 100vh;
   }
 
   .add-score {
